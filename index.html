@@ -5,8 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiencia Montessori - Painti</title>
-    <link rel="stylesheet" href="./style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
 
@@ -18,11 +19,11 @@
             <nav class="header__navbar">
                 
                 <ul>
-                    <li><a href="">INICIO</a></li>
-                    <li><a href="./pages/productosmontessori.html">PRODUCTOS MONTESSORI</a></li>
-                    <li><a href="./pages/artistica.html"> ARTISTICA</a></li>
-                    <li><a href="./pages/tipsytutoriales.html">TIPS Y TUTORIALES</a></li>
-                    <li><a href="./pages/contactanos.html">CONTACTANOS</a></li>
+                    <li class="header__li"><a href="" >INICIO</a></li>
+                    <li class="header__li"><a href="./pages/productosmontessori.html">PRODUCTOS MONTESSORI</a></li>
+                    <li class="header__li"><a href="./pages/artistica.html"> ARTISTICA</a></li>
+                    <li class="header__li"><a href="./pages/tipsytutoriales.html">TIPS Y TUTORIALES</a></li>
+                    <li class="header__li"><a href="./pages/contactanos.html">CONTACTANOS</a></li>
                 </ul>
             
                 
@@ -48,7 +49,9 @@
                 
                 <div class="scrolltarjeta">
 
-                    <article class="producto__article">
+                    <article class="producto__article" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <img src="./img/balancin.jpg" alt="balancin Montessori" class="producto__img">
                         <h3>Balancin Montessori</h3>
                         
@@ -61,7 +64,9 @@
                         
                     </article>
 
-                    <article class="producto__article">
+                    <article class="producto__article" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <img src="./img/torredeaprendizaje.jpg" alt="torre de aprendizaje" class="producto__img">
                         <h3>Torre de aprendizaje</h3>
                         
@@ -74,7 +79,9 @@
                         
                     </article>
 
-                    <article class="producto__article">
+                    <article class="producto__article" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <img src="./img/cilindromontessori.jpg" alt="cilindro Montessori" class="producto__img">
                         <h3>Cilindro Montessori</h3>
                         
@@ -87,7 +94,9 @@
                         
                     </article>
 
-                    <article class="producto__article">
+                    <article class="producto__article" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <img src="./img/cubomontessori.jpg" alt="cubo Montessori" class="producto__img">
                         <h3>Cubo Montessori</h3>
                         <div class="producto__precio">
@@ -106,7 +115,9 @@
                 <h2 class="promoartistica__titulo">Productos de artistica en PROMO</h2>
                 <div class="scrolltarjeta">
 
-                    <article class="producto__article">
+                    <article class="producto__article" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <img src="./img/pinturaalatiza.png" alt="Pintura a la tiza" class="producto__img">
                         <h3>Pintura a la tiza</h3>
                         <div class="producto__precio">
@@ -115,7 +126,9 @@
                         </div>
                         <a href="" class="carrito">Agregar al carrito</a>
                     </article>
-                    <article class="producto__article">
+                    <article class="producto__article" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <img src="./img/barniz.png" alt="barniz" class="producto__img">
                         <h3>Barniz</h3>
                         <div class="producto__precio">
@@ -124,7 +137,9 @@
                         </div>
                         <a href="" class="carrito">Agregar al carrito</a>
                     </article>
-                    <article class="producto__article">
+                    <article class="producto__article" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <img src="./img/rodillo.png" alt="rodillo espuma alta densidad" class="producto__img">
                         <h3>Rodillo espuma alta densidad</h3>
                         <div class="producto__precio">
@@ -133,7 +148,9 @@
                         </div>
                         <a href="" class="carrito">Agregar al carrito</a>
                     </article>
-                    <article class="producto__article">
+                    <article class="producto__article" data-aos="flip-left"
+                    data-aos-easing="ease-out-cubic"
+                    data-aos-duration="2000">
                         <img src="./img/nex2.png" alt="pincelvirola2" class="producto__img">
                         <h3>Pincel Nex2 pro</h3>
                         <div class="producto__precio">
@@ -172,5 +189,9 @@
 
         </footer>
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
