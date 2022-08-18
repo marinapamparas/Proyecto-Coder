@@ -5,67 +5,72 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiencia Montessori - Painti</title>
-    <link rel="stylesheet" href="../style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     
-    <header class="header">
-        <a href="../index.html"><img src="../img/Logotipo-Painti-Transparente_degradado.png" alt="logo Painti" class="header__logo"></a>
-
-        <nav class="header__navbar">
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./productosmontessori.html">PRODUCTOS MONTESSORI</a></li>
-                <li><a href="./artistica.html">ARTISTICA</a></li>
-                <li><a href="./tipsytutoriales.html">TIPS Y TUTORIALES</a></li>
-                <li><a href="">CONTACTANOS</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/Logotipo-Painti-Transparente_degradado.png" alt="logo Painti" class="header__logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                        <a class="nav-link" href="./productosmontessori.html">PRODUCTOS MONTESSORI</a>
+                        <a class="nav-link" href="./artistica.html"> ARTISTICA</a>
+                        <a class="nav-link" href="./tipsytutoriales.html">TIPS Y TUTORIALES</a>
+                        <a class="nav-link" href="./contactanos.html">CONTACTANOS</a>
+                    </div>
+                </div>
+            </div>
         </nav>
-        
     </header>
 
     <main>
-        <section class="body">
-            <form class="form">
+        <section class="container-fluid formulario">
             
-                <fieldset>
-                    <legend>Formulario de consultas</legend>
-                    
-                    <div>
-                        <input type="text" id="nombre-usuario" name="nombre-usuario" placeholder="Nombre y apellido" class="form__input">
+            <fieldset>
+                <form>
+                
+                    <div class="col mb-3">
+
+                        <input type="text" id="nombre-usuario" name="nombre-usuario" placeholder="Nombre y apellido" class="form-control">
+
                     </div>
                 
-                    <br>
-
-                    <div>
-                        <input type="email" id="email-usuario" placeholder="Mail" class="form__input">
+                    <div class="col mb-3">
+                        <input type="email" id="email-usuario" placeholder="Mail" class="form-control">
                     </div>
                     
-                    <br>
 
-                    <div>
-                        <input type="number" id="telefono-usuario" name="telefono-usuario" placeholder="Telefono" class="form__input">
+                    <div class="col mb-3">
+                        <input type="number" id="telefono-usuario" name="telefono-usuario" placeholder="Telefono" class="form-control">
                     </div>
 
-                    <br>
-                   
-                    <div>
+                    
+                    <div class="col mb-3">
                         <label for="checkbox-terminos">¿Querés recibir las promociones disponibles?</label>
                         <input type="checkbox" id="checkbox-terminos">
                     </div>
 
-                    <br>
+                    
 
-                    <div>
-                        <textarea name="comentario-usuario" placeholder="Dejanos tu consulta" id="comentario-usuario" cols="30" rows="10" class="form__input"></textarea>
+                    <div class="col mb-3">
+                        <textarea name="comentario-usuario" placeholder="Dejanos tu consulta" id="comentario-usuario" cols="30" rows="5" class="form-control"></textarea>
                     </div>
-                    <br>
+                    
                     <input type="reset" value="Limpiar formulario">
 
                     <input type="submit" value="Enviar">
+                
+                </form>
             </fieldset>
-            </form>
         </section>
       
     </main>
@@ -90,5 +95,11 @@
         </div>
 
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src= "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

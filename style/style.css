@@ -19,205 +19,86 @@ a {
 
 /* HEADER  */
 
-.header{
-    padding: 1vw;
-    background-color:rgb(165, 224, 197) ;
+.header__logo{
+    width: 100px;
+}
+
+nav{
+    background: linear-gradient(rgb(165, 224, 197) 0% 20%, rgba(254, 192, 192, 0.726));
     font-family: "Monserrat", sans-serif ;
     font-weight: 600;   
-    text-align: center;
+    text-align: center; 
     font-size: 1rem;
- }
-
-
- .header__logo{
-    height: 10vh;
 }
 
 
-.header__navbar ul{
+
+/* INDEX*/
+
+.titulomobile{
+    text-align: center;
+    background-color: rgb(165, 224, 197);
+    color: white;
+    margin: 2px;
+    padding: 5px;
+}
+
+@media (min-width:768px){
+    .titulomobile{
+        display: none;
+    }
+}
+
+.espaciado{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.overflow-scroll{
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+}
+
+@media (min-width: 1200px){
+.overflow-scroll{
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+}
+
+.producto{
+    width: 15rem;
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-evenly;
-        
-} 
-
-
-/* MEDIA QUERIES Y BREAKPOINTS */
-/* PRIMER BREAKPOINT */
-@media (min-width: 480px){
-
-
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
 
 .producto__img{
-    max-width: 230px;
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-left: 20px;
 }
-
-
-
-.producto__article{
-    max-width: 300px;
-}
-
-}
-
-/* SEGUNDO BREAKPOINT */
-
-@media (min-width: 700px){
-    .header__navbar ul{
-        display: flex;
-        flex-flow: row wrap;
-        justify-content: space-between;
-    }
-    .header__logo{
-        height: 13vh;    
-    }
-    .scrolltarjeta {
-        overflow-x: hidden;
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        flex-flow: wrap;
-    }
-}
-
-/* TERCER BREAKPOINT */
-
-@media (min-width: 1200px) {
-.header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center; 
-    padding: 0;
-}
-
-.header__navbar {
-    width: 60%;               
-}
-
-.header__navbar ul{
-   
-    display: flex;
-    flex-flow: row; 
-    justify-content: space-around;       
-}
-
-
-
-.maingrid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat (2, auto);
-
-    grid-template-areas: 
-    "intro intro"
-    "montessori artistica";
-}
-
-.intro__titulo{
-    font-size: 2rem;
-}
-.intro__parrafo{
-    font-size: 2rem;
-}
-
-.mainhtmlgrid{
-    height: auto;
-    padding: 5px;
-    display: grid;
-    grid-template-columns: 70% 30% ;
-    grid-template-rows: auto;
-
-    grid-template-areas: 
-    "producto externo";
-}
-
-}
-
-
-/* INDEX */
-.intro{
-    width: 100%;
-    height: 85vh;
-    background: #000 url(../img/nenepintando.jpg) center / cover no-repeat fixed;    
-    color: rgb(255, 255, 255);
-    padding: 10%;
-    font-family: "Monserrat", sans-serif ;
-    font-weight: 400;
-    
-
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    grid-area: intro;
-}
-
-.intro__titulo{
-    
-    background-color: rgba(82, 199, 245, 0.215);
-    border-radius: 20px;
-    padding: 15px; 
-    font-size: 2rem;
-    font-weight: 600;
-    text-align: center;
-
-}
-
-.intro__parrafo{
-    background-color: rgba(82, 199, 245, 0.215);
-    border-radius: 20px;
-    padding: 15px;
-    font-size: 1rem;
-    font-weight: 400;
-    text-align: center;
-}  
-
-.scrolltarjeta {
-    padding: 15px;
-    display: flex;
-    gap: 10px;
-    overflow-x: scroll;
-   
-}
-
-
-
-/* HTMLS */
-
-.body-sections{
-    font-family: "Monserrat", sans-serif ;
-    width: 400;
-    width: 100%;
-        
-
+.producto__precio{
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap; 
-    justify-content: center;
-    
-    
-}
-
-.body-sections__titulo{
+    justify-content: space-around;
+    width: 100%;
+    padding: 15px;
+} 
+.promo__titulo{
     display:flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     background-color:  rgb(165, 224, 197) ;
-    border-radius: 30px;
-    margin: 5px;
     width: 100%;
-    height: 10vh;
+    height: 8vh;
     color: white;
     font-size: 1rem;
-
-
-}
-
-.body-sections__texto{
-    text-align: center;
-    font-style: italic;
+    border-radius: 5px;
+    padding: 10px;
 }
 
 .carrito {
@@ -230,69 +111,22 @@ a {
     padding: 8px 10px;
 }
 
-.producto{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-    flex-flow: wrap;
-    height: 90%;
-    margin: 10px;
+.carousel__titulo{
+    
+    background-color: rgba(210, 105, 30, 0.288);
+    border-radius: 10px;
 }
-
-.producto__article{
-    min-width: 200px;
-    max-width: 200px;
-    height: 320px;
-    padding: 3px;
-
-    text-align: center;
-
-    border: 2px solid rgba(0, 0, 0, 0.397);
-    border-radius: 5px;
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-   
-    overflow: hidden;
-    margin: 5px;
-}
-
-.producto__img{
-    width: 85%;
-}
-
-.producto__video{
-    width: 60%;
+.carousel__texto{
+    
+    background-color: rgba(210, 105, 30, 0.288);
+    border-radius: 10px;
 }
 
 
-.producto__precio{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width: 100%;
-    padding: 15px;
-}
 
-.sale{
-    text-decoration: line-through;
-}
-.precio{
-    font-weight: bold;
-}
+/* htmls */
 
 
-.productgrid{
-    grid-area: producto;   
-}
-
-
-.linkexterno{
-    grid-area: externo;
-    text-align: center;  
-}
 
 .notes{
     display: flex;
@@ -306,7 +140,7 @@ a {
 
 .articuloexterno{
     width: 90%;
-    height: 30vh;
+    height: 35vh;
     border: solid gray;
     border-radius: 10px;
 
@@ -331,110 +165,60 @@ padding: 7px;
 font-style: italic;
 }
 
-.ideasimagenes{
+.videoespacio{
+    height: 70vh;
     display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-        
-}
-
-.ideasimagenes__articulo{
-    width: 90%;
-    height: 40vh;
-   
-    
-    margin: 10px;
-
-    overflow: hidden; 
-
-}
-.ideasimagenes__img{
-    width: 250px;
-    height: 300px;
-    overflow: hidden;
-    
-}
-
-
-
-
-.promomontessori{
-    font-family: "Monserrat", sans-serif ;
-    width: 400;
-    width: 100%;
-    
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    grid-area: montessori;
-    border:  1px solid grey;
-    border-radius: 5px;
-    
-}
-
-.promomontessori__titulo{
-    display:flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color:  rgb(165, 224, 197) ;
-    width: 100%;
-    height: 10vh;
-    color: white;
+    text-align: center;
+}
+.videoespacio__video{
+    width: 200px;
+}
+
+.videoespacio__titulo{
     font-size: 1rem;
-    
+    margin: 15px;
 }
 
-.promoartistica{
-    font-family: "Monserrat", sans-serif ;
-    width: 400;
-    width: 100%;
-    
-
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
-    grid-area: artistica;
-    border:  1px solid grey;
-    border-radius: 5px;
-}
-
-.promoartistica__titulo{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    background-color:  rgb(165, 224, 197) ;
-    width: 100%;
-    height: 10vh;
-    color: white;
-    font-size: 1rem;
+.plustext {
+    text-align: center;
+    font-style: italic;
+    font-size: large;
+    margin-bottom: 20px;
 }
 
 
-.form{
+/* CONTACTANOS HTML */
+.formulario{
     width: 100%;
-    height: 75vh;
     background: #000 url(../img/neneconjuguete.jpg) center / cover no-repeat fixed;
     text-align: center;
     color: rgb(255, 255, 255);
-    padding: 50px;
+    
 
     display: flex;
     justify-content: center;
-    align-content: center;
+    align-items: center;
+
+    padding-top: 40px;
+    padding-bottom: 60px;
 }
 
 fieldset{
-    border: 2px solid black;
-    width: 40%;
-    height: 90%;
-    text-align: center;
-    font-weight: bold;
-    padding: 30px;
-}
+    height: 70vh;
 
-.form__input{
-    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    border: rgba(128, 128, 128, 0.615) solid;
+    padding: 15px;
+    margin-top: 20px;
+    border-radius: 15px;
+
 }
 
 
@@ -444,7 +228,7 @@ fieldset{
 .footer{
     width: 100%;
     height: 15%;
-    background-color: rgb(165, 224, 197);
+    background: linear-gradient(rgba(254, 192, 192, 0.726) 0% 4%, rgb(165, 224, 197));
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -467,3 +251,7 @@ fieldset{
     width: 40px;
     margin: 5px;
 } 
+
+.iconos:hover{
+    transform: scale(1.5);
+}

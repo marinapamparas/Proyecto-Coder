@@ -5,140 +5,206 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiencia Montessori - Painti</title>
-    <link rel="stylesheet" href="../style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     
-    <header class="header">
-        <a href="../index.html"><img src="../img/Logotipo-Painti-Transparente_degradado.png" alt="logo Painti" class="header__logo"></a>
-
-        <nav class="header__navbar">
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./productosmontessori.html">PRODUCTOS MONTESSORI</a></li>
-                <li><a href="">ARTISTICA</a></li>
-                <li><a href="./tipsytutoriales.html">TIPS Y TUTORIALES</a></li>
-                <li><a href="./contactanos.html">CONTACTANOS</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/Logotipo-Painti-Transparente_degradado.png" alt="logo Painti" class="header__logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                        <a class="nav-link" href="./productosmontessori.html">PRODUCTOS MONTESSORI</a>
+                        <a class="nav-link" href=""> ARTISTICA</a>
+                        <a class="nav-link" href="./tipsytutoriales.html">TIPS Y TUTORIALES</a>
+                        <a class="nav-link" href="./contactanos.html">CONTACTANOS</a>
+                    </div>
+                </div>
+            </div>
         </nav>
-        
     </header>
 
-    <main class="mainhtmlgrid">
+    <main>
 
-        <section class="body-sections">
-            <div class="productgrid">
-                <h2 class="body-sections__titulo">¡Completa tu compra con nuestros productos de artistica para decorar a gusto!</h2>
+        <section class="container-fluid">
+            <div class="row">
+                <div class="col-lg-9 espaciado">
 
-                <div class="producto">
-                    <article class="producto__article">
+                    <section class="container-fluid">
 
-                        <img src="../img/pinturaalatiza.png" alt="Pintura a la tiza" class="producto__img">
+                        <div class="row">
+                            <h2 class="promo__titulo">¡Completa tu compra con nuestros productos de artistica para decorar a gusto!</h2>
 
-                        <h3>Pintura a la tiza</h3>
-                        <p>$500</p>
+                            
+                            <article class="col d-flex justify-content-center">
+                                <div class="card producto">
 
-                        <div class="producto__select" style="width: 200px;">
-                            <select name="colores" id="colores-disponibles" >
-                                <option value="blanco" class="select-items">Blanco</option>
-                                <option value="rosa">Rosa</option>
-                                <option value="rojo">Rojo</option>
-                                <option value="amarillo">Amarillo</option>
-                                <option value="verde">Verde</option>
-                                <option value="azul">Azul</option>
-                                <option value="negro">Negro</option>
-                            </select>
+                                    <img src="../img/pinturaalatiza.png" alt="Pintura a la tiza" class="card-img-top producto__img">
+
+                                    <div class="card-body">
+
+                                        <h3 class="card-title fs-5">Pintura a la tiza</h3>
+                                        <p class="card-text">$500</p>
+
+                                        <div class="dropdown-center">
+                                            <button class="btn btn-secondary dropdown-toggle carrito" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Colores
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="">Rosa</a></li>
+                                                <li><a class="dropdown-item" href="">Rojo</a></li>
+                                                <li><a class="dropdown-item" href="">Amarillo</a></li>
+                                                <li><a class="dropdown-item" href="">Verde</a></li>
+                                                <li><a class="dropdown-item" href="">Azul</a></li>
+                                                <li><a class="dropdown-item" href="">Violeta</a></li>
+                                                <li><a class="dropdown-item" href="">Celeste</a></li>
+                                                <li><a class="dropdown-item" href="">Negro</a></li>
+                                            </ul>
+                                            </div>
+                                        
+                                    </div>
+                                </div>
+
+                            </article>
+
+                            <article class="col d-flex justify-content-center">
+                                <div class="card producto">
+
+                                    <img src="../img/nex2.png" alt="Pincel Nex 2" class="card-img-top producto__img">
+
+                                    <div class="card-body">
+
+                                        <h3 class="card-title fs-5">Pincel</h3>
+                                        <p class="card-text">$300</p>
+
+                                        <div class="dropdown-center">
+                                            <button class="btn btn-secondary dropdown-toggle carrito" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Medidas
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="">10</a></li>
+                                                <li><a class="dropdown-item" href="">15</a></li>
+                                                <li><a class="dropdown-item" href="">20</a></li>
+                                                <li><a class="dropdown-item" href="">25</a></li>
+                                                <li><a class="dropdown-item" href="">30</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                            </article>
+
+                            <article class="col d-flex justify-content-center">
+                                <div class="card producto">
+
+                                    <img src="../img/barniz.png" alt="Barniz" class="card-img-top producto__img">
+
+                                    <div class="card-body">
+
+                                        <h3 class="card-title fs-5">Barniz</h3>
+                                        <p class="card-text">$400</p>
+
+                                        <div class="dropdown-center">
+                                            <button class="btn btn-secondary dropdown-toggle carrito" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Terminaciones
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="">Mate</a></li>
+                                                <li><a class="dropdown-item" href="">Satinado</a></li>
+                                                <li><a class="dropdown-item" href="">Brillante</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                            </article>
+
+                            <article class="col d-flex justify-content-center">
+                                <div class="card producto">
+
+                                    <img src="../img/rodillo.png" alt="Rodillo flockeado" class="card-img-top producto__img">
+
+                                    <div class="card-body">
+
+                                        <h3 class="card-title fs-5">Rodillo</h3>
+                                        <p class="card-text">$350</p>
+
+                                        <div class="dropdown-center">
+                                            <button class="btn btn-secondary dropdown-toggle carrito" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                Medidas
+                                            </button>
+                                            <ul class="dropdown-menu">
+                                                <li><a class="dropdown-item" href="">5</a></li>
+                                                <li><a class="dropdown-item" href="">8</a></li>
+                                                <li><a class="dropdown-item" href="">11</a></li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+
+                            </article>
+
                         </div>
 
-                        <a href="" class="carrito">Agregar al carrito</a>
-
-                    </article>
-
-                    <article class="producto__article">
-
-                        <img src="../img/nex2.png" alt="Pincel Nex 2" class="producto__img">
-
-                        <h3>Pincel</h3>
-                        <p>$300</p>
-
-                        <div>
-                            <select name="tamaño" id="tamaños-disponibles">
-                                <option value="10">10</option>
-                                <option value="15">15</option>
-                                <option value="20">20</option>
-                            </select>
-                        </div>
-
-                        <a href="" class="carrito">Agregar al carrito</a>
-
-                    </article>
-
-                    <article class="producto__article">
-
-                        <img src="../img/barniz.png" alt="Barniz" class="producto__img">
-
-                        <h3>Barniz</h3>
-                        <p>$400</p>
-
-                        <div>
-                            <select name="terminacion" id="terminaciones-disponibles">
-                                <option value="mate">Mate</option>
-                                <option value="satinado">Satinado</option>
-                                <option value="brillante">Brillante</option>
-                            </select>
-                        </div>
-
-                        <a href="" class="carrito">Agregar al carrito</a>
-
-                    </article>
-
-                    <article class="producto__article">
-
-                        <img src="../img/rodillo.png" alt="Rodillo flockeado" class="producto__img">
-
-                        <h3>Rodillo</h3>
-                        <p>$350</p>
-
-                        <div>
-                            <select name="tamaño" id="tamaños-disponibles">
-                                <option value="10">10</option>
-                                <option value="15">15</option>
-                                <option value="20">20</option>
-                            </select>
-                        </div>
-
-                        <a href="" class="carrito">Agregar al carrito</a>
-
-                    </article>
+                    </section>
                 </div>
+
+                <div class="col-lg-3 espaciado">
+
+                    <section class="container-fluid">
+                            
+                        <div class="row">
+                        
+                            <h2 class="promo__titulo">Ideas de decorado</h2>
+
+                            <div id="carouselideas" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner espaciado">
+                                    <div class="carousel-item active">
+                                        <img src="../img/cubo montessori pintado.jpeg"  class="d-block w-100" alt="cubo pintado">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/nordicopintado.png" class="d-block w-100" alt="gimnasio nordico pintado">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/montessoripintado7.jpg" class="d-block w-100" alt="idea de decoracion">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/montessoripintado6.jpg" class="d-block w-100" alt="idea de decoracion">
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img src="../img/montessoripintado.jpeg"  class="d-block w-100" alt="idea de decoracion">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/montessoripintado2.jpeg" class="d-block w-100" alt="idea de decoracion">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/montessoripintado4.jpg" class="d-block w-100" alt="idea de decoracion">
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="../img/montessoripintado5.jpg" class="d-block w-100" alt="idea de decoracion">
+                                    </div>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+
+                        
+                    </section>
+
+                </div> 
             </div>
-
-        </section>
-
-        <section class="body-sections">
-                
-            <div class="linkexterno">
-            
-                <h2 class="body-sections__titulo">Ideas de pintados</h2>
-
-                <div class="ideasimagenes">
-                    <article class="ideasimagenes__articulo">
-                        <img src="../img/cubo montessori pintado.jpeg" alt="cubo pintado" class="ideasimagenes__img">
-                    </article>
-                    <article class="ideasimagenes__articulo">
-                        <img src="../img/nordicopintado.png" alt="gimnasio nordico pintado" class="ideasimagenes__img">
-                    </article>
-                   
-                    <article class="ideasimagenes__articulo">
-                        <img src="../img/torreaprendizajepintada.png" alt="torre aprendizaje pintada" class="ideasimagenes__img">
-                    </article>
-                </div>
-
-            </div>
-
-
-            
         </section>
         
     </main>
@@ -163,6 +229,11 @@
         </div>
 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src= "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
 

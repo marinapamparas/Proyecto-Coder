@@ -5,63 +5,80 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiencia Montessori - Painti</title>
-    <link rel="stylesheet" href="../style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../style/style.css">
 </head>
 <body>
     
-    <header class="header">
-        <a href="../index.html"><img src="../img/Logotipo-Painti-Transparente_degradado.png" alt="logo Painti" class="header__logo"></a>
-
-        <nav class="header__navbar">
-            <ul>
-                <li><a href="../index.html">INICIO</a></li>
-                <li><a href="./productosmontessori.html">PRODUCTOS MONTESSORI</a></li>
-                <li><a href="./artistica.html">ARTISTICA</a></li>
-                <li><a href="">TIPS Y TUTORIALES</a></li>
-                <li><a href="./contactanos.html">CONTACTANOS</a></li>
-            </ul>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="../index.html"><img src="../img/Logotipo-Painti-Transparente_degradado.png" alt="logo Painti" class="header__logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="../index.html">HOME</a>
+                        <a class="nav-link" href="./productosmontessori.html">PRODUCTOS MONTESSORI</a>
+                        <a class="nav-link" href="./artistica.html"> ARTISTICA</a>
+                        <a class="nav-link" href="">TIPS Y TUTORIALES</a>
+                        <a class="nav-link" href="./contactanos.html">CONTACTANOS</a>
+                    </div>
+                </div>
+            </div>
         </nav>
-        
     </header>
 
     <main>
         
+        <h2 class="promo__titulo">¿Querés decorar y no sabes cómo? ¡Te dejamos todos los tips que necesitas!</h2>
+        
 
-        <section class="body-sections">
-            <h2 class="body-sections__titulo">¿Querés decorar y no sabes cómo? ¡Te dejamos todos los tips que necesitas!</h2>
-            <br>
-            <div class="producto">
+        <section class="container-fluid">
+            
+            
+            <div class="row">
                 
 
-                <article class="producto__article">
+                <article class="col d-flex justify-content-center">
     
-                    <video src="../video/regalamontessori.mp4" class="producto__video" controls>Your browser does not support the video tag.</video>
-                    <br>
-                    <h3>Regalá un Montessori con tu propio toque</h3>
+                    <div class="videoespacio">
+                        <video src="../video/regalamontessori.mp4" class="videoespacio__video" controls>Your browser does not support the video tag.</video>
+                        
+                        <h3 class="videoespacio__titulo">Regalá un Montessori con tu propio toque</h3>
+                    </div>
             
                 </article>
                 <br>
-                <article class="producto__article">
+                <article class="col d-flex justify-content-center">
     
-                    <video src="../video/tutorialpinturafibrofacil.mp4" class="producto__video" controls>Your browser does not support the video tag.</video>
-                    <br>
-                    <h3>Tips para pintar fibrofacil</h3>
+                    <div class="videoespacio">
+                    
+                        <video src="../video/tutorialpinturafibrofacil.mp4" class="videoespacio__video" controls>Your browser does not support the video tag.</video>
+
+                        <h3 class="videoespacio__titulo">Tips para pintar fibrofacil</h3>
+
+                    </div>
             
                 </article>
                 <br>
-                <article class="producto__article">
-    
-                    <video src="../video/decoformitas.mp4" class="producto__video" controls>Your browser does not support the video tag.</video>
-                    <br>
-                    <h3>Tutorial: cómo decorar con formitas</h3>
+                <article class="col d-flex justify-content-center">
+
+                    <div class="videoespacio">
+                        <video src="../video/decoformitas.mp4" class="videoespacio__video" controls>Your browser does not support the video tag.</video>
+                        
+                        <h3 class="videoespacio__titulo">Tutorial: cómo decorar con formitas</h3>
+                    </div>
             
                 </article>
 
 
             </div>
 
-            <div class="body-sections__texto">
+            <div class="plustext">
                 <br>
                 <p>
                     ¡Para más tips, tutoriales e ideas de decoración seguinos en Instagram y Facebook!
@@ -96,5 +113,11 @@
         </div>
 
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src= "https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

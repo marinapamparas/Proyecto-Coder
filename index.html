@@ -5,148 +5,241 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Experiencia Montessori - Painti</title>
-    <link rel="stylesheet" href="./style/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;600&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./style/style.css">
 </head>
 <body>
 
     <div>
-      <header class="header">
-
-            <a href="index.html"><img src="./img/Logotipo-Painti-Transparente_degradado.png" alt="logo Painti" class="header__logo"></a>    
+        <header>     
             
-            <nav class="header__navbar">
-                
-                <ul>
-                    <li><a href="">INICIO</a></li>
-                    <li><a href="./pages/productosmontessori.html">PRODUCTOS MONTESSORI</a></li>
-                    <li><a href="./pages/artistica.html"> ARTISTICA</a></li>
-                    <li><a href="./pages/tipsytutoriales.html">TIPS Y TUTORIALES</a></li>
-                    <li><a href="./pages/contactanos.html">CONTACTANOS</a></li>
-                </ul>
-            
-                
+            <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html"><img src="./img/Logotipo-Painti-Transparente_degradado.png" alt="logo Painti" class="header__logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active" aria-current="page" href="index.html">HOME</a>
+                        <a class="nav-link" href="./pages/productosmontessori.html">PRODUCTOS MONTESSORI</a>
+                        <a class="nav-link" href="./pages/artistica.html"> ARTISTICA</a>
+                        <a class="nav-link" href="./pages/tipsytutoriales.html">TIPS Y TUTORIALES</a>
+                        <a class="nav-link" href="./pages/contactanos.html">CONTACTANOS</a>
+                    
+                        
+                    </div>
+                </div>
+            </div>
             </nav>
-            
+                       
 
         </header>
-        
-        <main class="maingrid">
+        <main>
 
-            <section class="intro">
+            <h1 class="titulomobile">Regalá una experiencia Montessori</h1>
 
-                              
-                <h1 class="intro__titulo">Regalá una experiencia Montessori</h1>
-                
-                <p class="intro__parrafo">Te traemos una propuesta... Regalale a tu peque un producto Montessori, y todo lo necesario para pintarlo a gusto juntos! Encontralo todo en nuestra página: plazas Montessori, juegos didácticos, acrílicos, pintura a la tiza, pinceles y mucho más...</p>
-
-                
-
-            </section>
-            <section class="promomontessori">
-                <h2 class="promomontessori__titulo">Productos Montessori en PROMO</h2>
-                
-                <div class="scrolltarjeta">
-
-                    <article class="producto__article">
-                        <img src="./img/balancin.jpg" alt="balancin Montessori" class="producto__img">
-                        <h3>Balancin Montessori</h3>
-                        
-                        <div class="producto__precio">
-                            <p class="sale">$2000</p>
-                            <p class="precio">$1800</p>
-                        </div>
-                        
-                        <a href="" class="carrito">Agregar al carrito</a>
-                        
-                    </article>
-
-                    <article class="producto__article">
-                        <img src="./img/torredeaprendizaje.jpg" alt="torre de aprendizaje" class="producto__img">
-                        <h3>Torre de aprendizaje</h3>
-                        
-                        <div class="producto__precio">
-                            <p class="sale">$2000</p>
-                            <p class="precio">$1800</p>
-                        </div>
-                        
-                        <a href="" class="carrito">Agregar al carrito</a>
-                        
-                    </article>
-
-                    <article class="producto__article">
-                        <img src="./img/cilindromontessori.jpg" alt="cilindro Montessori" class="producto__img">
-                        <h3>Cilindro Montessori</h3>
-                        
-                        <div class="producto__precio">
-                            <p class="sale">$2000</p>
-                            <p class="precio">$1800</p>
-                        </div>
-                        
-                        <a href="" class="carrito">Agregar al carrito</a>
-                        
-                    </article>
-
-                    <article class="producto__article">
-                        <img src="./img/cubomontessori.jpg" alt="cubo Montessori" class="producto__img">
-                        <h3>Cubo Montessori</h3>
-                        <div class="producto__precio">
-                            <p class="sale">$2000</p>
-                            <p class="precio">$1800</p>
-                        </div>
-                        <a href="" class="carrito">Agregar al carrito</a>
-                    </article>
-
-                                       
-                </div>
-                
-            </section>
-
-            <section class="promoartistica">
-                <h2 class="promoartistica__titulo">Productos de artistica en PROMO</h2>
-                <div class="scrolltarjeta">
-
-                    <article class="producto__article">
-                        <img src="./img/pinturaalatiza.png" alt="Pintura a la tiza" class="producto__img">
-                        <h3>Pintura a la tiza</h3>
-                        <div class="producto__precio">
-                            <p class="sale">$200</p>
-                            <p class="precio">$180</p>
-                        </div>
-                        <a href="" class="carrito">Agregar al carrito</a>
-                    </article>
-                    <article class="producto__article">
-                        <img src="./img/barniz.png" alt="barniz" class="producto__img">
-                        <h3>Barniz</h3>
-                        <div class="producto__precio">
-                            <p class="sale">$200</p>
-                            <p class="precio">$180</p>
-                        </div>
-                        <a href="" class="carrito">Agregar al carrito</a>
-                    </article>
-                    <article class="producto__article">
-                        <img src="./img/rodillo.png" alt="rodillo espuma alta densidad" class="producto__img">
-                        <h3>Rodillo espuma alta densidad</h3>
-                        <div class="producto__precio">
-                            <p class="sale">$200</p>
-                            <p class="precio">$180</p>
-                        </div>
-                        <a href="" class="carrito">Agregar al carrito</a>
-                    </article>
-                    <article class="producto__article">
-                        <img src="./img/nex2.png" alt="pincelvirola2" class="producto__img">
-                        <h3>Pincel Nex2 pro</h3>
-                        <div class="producto__precio">
-                            <p class="sale">$200</p>
-                            <p class="precio">$180</p>
-                        </div>
-                        <a href="" class="carrito">Agregar al carrito</a>
-                    </article>
-                    
-                </div>
-                
-            </section>
             
+            <div id="carouselmontessori" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-indicators">
+                  <button type="button" data-bs-target="#carouselmontessori" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                  <button type="button" data-bs-target="#carouselmontessori" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                  <button type="button" data-bs-target="#carouselmontessori" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+                <div class="carousel-inner carrousel">
+                  <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="./img/nenepintando.jpg" class="d-block w-100 carousel__img img-fluid" alt="nene pintando">
+                    <div class="carousel-caption d-none d-md-block">
+                      <h2 class=" fs-1 carousel__texto">Regalá una experiencia Montessori</h2>
+                      <p class="fs-4 carousel__texto">Te traemos una propuesta...    Regalale a tu peque un producto Montessori, y todo lo necesario para pintarlo a gusto juntos! Encontralo todo en nuestra página: plazas Montessori, juegos didácticos, acrílicos, pintura a la tiza, pinceles y mucho más...</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="./img/pincelescarousel.jpg" class="d-block w-100 carousel__img img-fluid" alt="pintando con pincel">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="fs-1 carousel__texto">Regalá una experiencia Montessori</h2>
+                        <p class="fs-4 carousel__texto">Te traemos una propuesta...      Regalale a tu peque un producto Montessori, y todo lo necesario para pintarlo a gusto juntos! Encontralo todo en nuestra página: plazas Montessori, juegos didácticos, acrílicos, pintura a la tiza, pinceles y mucho más...</p>
+                    </div>
+                  </div>
+                  <div class="carousel-item active" data-bs-interval="4000">
+                    <img src="./img/juguetescarousel.jpg" class="d-block w-100 carousel__img img-fluid" alt="juguetes">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h2 class="fs-1 carousel__texto">Regalá una experiencia Montessori</h2>
+                        <p class="fs-4 carousel__texto">Te traemos una propuesta...      Regalale a tu peque un producto Montessori, y todo lo necesario para pintarlo a gusto juntos! Encontralo todo en nuestra página: plazas Montessori, juegos didácticos, acrílicos, pintura a la tiza, pinceles y mucho más...</p>
+                    </div>
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselmontessori" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                  </button>
+                  <button class="carousel-control-next" type="button" data-bs-target="#carouselmontessori" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                  </button>
+              </div>
+
+
+            <section class="container-fluid">
+                <div class="row">
+                    <div class="col-xl-6 espaciado">
+                        
+                        
+                        <section class="container-fluid">
+
+                            <h2 class="promo__titulo">Productos Montessori en PROMO</h2>
+
+                            <div class="row overflow-scroll">
+                                
+
+                                <article class="col d-flex justify-content-center">
+
+                                    <div class="card producto">
+                                        <img src="./img/balancin.jpg" class="card-img-top producto__img" alt="balancin Montessori">
+                                        <div class="card-body">
+                                            <h3 class="card-title fs-5">Balancin Montessori</h3>
+                                            <div class="producto__precio">
+                                                <p class="card-text text-decoration-line-through">$2000</p>
+                                                <p class="card-text fw-bolder">$1800</p>
+                                            </div>
+                                        <a href="" class="carrito">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                    
+                                </article>
+
+                                <article class="col d-flex justify-content-center">
+
+                                    <div class="card producto">
+                                        <img src="./img/torredeaprendizaje.jpg" class="card-img-top producto__img" alt="torre de aprendizaje">
+                                        <div class="card-body">
+                                            <h3 class="card-title fs-5">Torre de aprendizaje</h3>
+                                            <div class="producto__precio">
+                                                <p class="card-text text-decoration-line-through">$2000</p>
+                                                <p class="card-text fw-bolderprecio">$1800</p>
+                                            </div>
+                                        <a href="" class="carrito">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                    
+                                </article>
+                                <article class="col d-flex justify-content-center">
+
+                                    <div class="card producto">
+                                        <img src="./img/cilindromontessori.jpg" class="card-img-top producto__img" alt="cilindro Montessori">
+                                        <div class="card-body">
+                                            <h3 class="card-title fs-5">Cilindro Montessori</h3>
+                                            <div class="producto__precio">
+                                                <p class="card-text text-decoration-line-through">$2000</p>
+                                                <p class="card-text fw-bolder">$1800</p>
+                                            </div>
+                                        <a href="" class="carrito">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                    
+                                </article>
+                                <article class="col d-flex justify-content-center">
+
+                                    <div class="card producto">
+                                        <img src="./img/cubomontessori.jpg" class="card-img-top producto__img" alt="cubo Montessori">
+                                        <div class="card-body">
+                                            <h3 class="card-title fs-5">Cubo Montessori</h3>
+                                            <div class="producto__precio">
+                                                <p class="card-text text-decoration-line-through">$2000</p>
+                                                <p class="card-text fw-bolder">$1800</p>
+                                            </div>
+                                        <a href="" class="carrito">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                    
+                                </article>
+
+
+                                                
+                            </div>
+                            
+                        </section>
+                    </div>
+                    <div class="col-xl-6 espaciado">
+                        <section class="container-fluid">
+                            
+                            <h2 class="promo__titulo lh-sm">Productos de artistica en PROMO</h2>
+                            
+                            <div class="row overflow-scroll">
+                                
+
+                                <article class="col d-flex justify-content-center">
+
+                                    <div class="card producto">
+                                        <img src="./img/pinturaalatiza.png" class="card-img-top producto__img" alt="Pintura a la tiza">
+                                        <div class="card-body">
+                                            <h3 class="card-title fs-5">Pintura a la tiza</h3>
+                                            <div class="producto__precio">
+                                                <p class="card-text text-decoration-line-through">$200</p>
+                                                <p class="card-text fw-bolder">$180</p>
+                                            </div>
+                                        <a href="" class="carrito">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                    
+                                </article>
+
+                                <article class="col d-flex justify-content-center">
+
+                                    <div class="card producto">
+                                        <img src="./img/barniz.png" class="card-img-top producto__img" alt="barniz">
+                                        <div class="card-body">
+                                            <h3 class="card-title fs-5">Barniz</h3>
+                                            <div class="producto__precio">
+                                                <p class="card-text text-decoration-line-through">$200</p>
+                                                <p class="card-text fw-bolder">$180</p>
+                                            </div>
+                                        <a href="" class="carrito">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                    
+                                </article>
+                                <article class="col d-flex justify-content-center">
+
+                                    <div class="card producto">
+                                        <img src="./img/rodillo.png" class="card-img-top producto__img" alt="rodillo espuma alta densidad">
+                                        <div class="card-body">
+                                            <h3 class="card-title fs-5">Rodillo espuma</h3>
+                                            <div class="producto__precio">
+                                                <p class="card-text text-decoration-line-through">$200</p>
+                                                <p class="card-text fw-bolder">$180</p>
+                                            </div>
+                                        <a href="" class="carrito">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                    
+                                </article>
+                                <article class="col d-flex justify-content-center">
+
+                                    <div class="card producto">
+                                        <img src="./img/nex2.png" class="card-img-top producto__img" alt="pincel virola 2">
+                                        <div class="card-body">
+                                            <h3 class="card-title fs-5">Pincel nex2</h3>
+                                            <div class="producto__precio">
+                                                <p class="card-text text-decoration-line-through">$200</p>
+                                                <p class="card-text fw-bolder">$180</p>
+                                            </div>
+                                        <a href="" class="carrito">Agregar al carrito</a>
+                                        </div>
+                                    </div>
+                                    
+                                </article>
+
+
+                                                
+                            </div>
+                            
+                        </section>
+                    </div> 
+                </div>
+            </section>
 
         </main>
 
@@ -172,5 +265,11 @@
 
         </footer>
     </div>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
