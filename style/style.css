@@ -32,6 +32,9 @@ nav{
 }
 
 
+main{
+    min-height: 70vh;
+}
 
 /* INDEX*/
 
@@ -61,7 +64,7 @@ nav{
 @media (min-width: 1200px){
 .overflow-scroll{
     flex-wrap: wrap;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 }
 
@@ -236,6 +239,7 @@ fieldset{
     font-family: "Monserrat", sans-serif ;
     font-size: 1rem;
     padding: 2vw;
+
 }
 
 .footer__titulo{
