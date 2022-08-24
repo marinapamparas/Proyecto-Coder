@@ -1,0 +1,23 @@
+.producto{
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+.producto__img{
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
+    margin-left: 20px;
+}
+.producto__precio{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+    padding: 15px;
+} 
