@@ -1,7 +1,7 @@
 .titulomobile{
     text-align: center;
-    background-color: rgb(165, 224, 197);
-    color: white;
+    background-color: $color-primario;
+    color: $color-secundario;
     margin: 2px;
     padding: 5px;
 }
@@ -19,10 +19,10 @@
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color:  rgb(165, 224, 197) ;
+    background-color:  $color-primario ;
     width: 100%;
     height: 8vh;
-    color: white;
+    color: $color-secundario;
     font-size: 1rem;
     border-radius: 5px;
     padding: 10px;

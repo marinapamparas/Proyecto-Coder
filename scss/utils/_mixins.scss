@@ -1,12 +1,14 @@
-@media (min-width: 1200px){
-    .overflow-scroll{
-        flex-wrap: wrap;
-        overflow: hidden;
-    }
-}
 
-@media (min-width:768px){
-        .titulomobile{
-            display: none;
-        }
-}
+
+@mixin tablet{
+    @media (min-width:768px){
+        @content
+    }
+};
+
+@mixin desktop{
+    @media (min-width: 1200px){
+        @content
+    }
+    
+};

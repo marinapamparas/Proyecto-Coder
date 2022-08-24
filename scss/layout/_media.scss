@@ -1,0 +1,13 @@
+
+.overflow-scroll{
+    @include desktop{
+    flex-wrap: wrap;
+    overflow: hidden;}
+}
+
+
+
+.titulomobile{
+    @include{
+    display: none;}
+}

@@ -6,26 +6,31 @@
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    font-family: "Monserrat", sans-serif ;
+    font-family: $tipo-principal ;
     font-size: 1rem;
     padding: 2vw;
+        &__titulo{
+            font-size: 1rem;
+            text-align: center;
+        }
+        &__seccion{
+            text-align: center;
+        }
+
+
 
 }
 
-.footer__titulo{
-    font-size: 1rem;
-    text-align: center;
-}
 
-.footer__seccion{
-    text-align: center;
-}
+
+
 
 .iconos{
     width: 40px;
     margin: 5px;
+
+        &:hover{
+            transform: scale(1.5);
+        }
 } 
 
-.iconos:hover{
-    transform: scale(1.5);
-}
