@@ -3,8 +3,8 @@
 }
 
 nav{
-    background: linear-gradient(rgb(165, 224, 197) 0% 20%, rgba(254, 192, 192, 0.726));
-    font-family: $tipo-principal ;
+    background-color: map-get($map: $colores, $key: cuatro);
+    font-family: $tipo-principal;
     font-weight: 600;   
     text-align: center; 
     font-size: 1rem;

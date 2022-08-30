@@ -1,29 +1,33 @@
-.titulomobile{
-    text-align: center;
-    background-color: $color-primario;
-    color: $color-secundario;
-    margin: 2px;
-    padding: 5px;
-}
-
 .espaciado{
     margin-top: 10px;
     margin-bottom: 10px;
 }
 .overflow-scroll{
     flex-wrap: nowrap;
-    overflow-x: scroll;
 }
 
 .promo__titulo{
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color:  $color-primario ;
+    text-align: center;
+    font-family: $tipo-principal;
+    background-color:  map-get($map: $colores, $key: primario);
     width: 100%;
     height: 8vh;
-    color: $color-secundario;
+    color:  map-get($map: $colores, $key: secundario);
     font-size: 1rem;
     border-radius: 5px;
     padding: 10px;
+}
+
+.hero{
+    @extend .formulario;
+    background: #000 url(../../img/nenepintando.jpg) center / cover no-repeat local;
+    flex-direction: column;
+    padding: 30px;
+
+    &__text{
+        background-color:  map-get($map: $colores, $key: terciario);
+    }
 }

@@ -1,13 +1,8 @@
 
 .overflow-scroll{
     @include desktop{
-    flex-wrap: wrap;
-    overflow: hidden;}
+    flex-wrap: wrap !important;
+}
 }
 
 
-
-.titulomobile{
-    @include{
-    display: none;}
-}

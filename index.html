@@ -15,7 +15,7 @@
     <div>
         <header>     
             
-            <nav class="navbar navbar-expand-lg bg-light">
+            <nav class="navbar navbar-expand-lg">
             <div class="container-fluid">
                 <a class="navbar-brand" href="index.html"><img src="./img/Logotipo-Painti-Transparente_degradado.png" alt="logo Painti" class="header__logo"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -39,10 +39,16 @@
         </header>
         <main>
 
-            <h1 class="titulomobile">Regalá una experiencia Montessori</h1>
-
+            <div class="hero d-md-none">
+                <h1 class="fs-1 hero__text">Regalá una experiencia Montessori</h1>
+                <div>
+                    <p class="fs-3 hero__text">Te traemos una propuesta...</p>
+                    <p class="fs-4 hero__text">Regalale a tu peque un producto Montessori, y todo lo necesario para pintarlo a gusto juntos</p>
+                    <p class="fs-4 hero__text">Encontralo todo en nuestra página: plazas Montessori, juegos didácticos, acrílicos, pintura a la tiza, pinceles y mucho más...</p>
+                </div>
+            </div>
             
-            <div id="carouselmontessori" class="carousel slide" data-bs-ride="true">
+            <div id="carouselmontessori" class="carousel slide d-none d-md-block" data-bs-ride="true">
                 <div class="carousel-indicators">
                     <button type="button" data-bs-target="#carouselmontessori" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                     <button type="button" data-bs-target="#carouselmontessori" data-bs-slide-to="1" aria-label="Slide 2"></button>
@@ -53,21 +59,27 @@
                         <img src="./img/nenepintando.jpg" class="d-block w-100 carousel__img" alt="nene pintando">
                         <div class="carousel-caption d-none d-md-block">
                         <h2 class="fs-1 carousel__texto">Regalá una experiencia Montessori</h2>
-                        <p class="fs-4 carousel__texto">Te traemos una propuesta...    Regalale a tu peque un producto Montessori, y todo lo necesario para pintarlo a gusto juntos! Encontralo todo en nuestra página: plazas Montessori, juegos didácticos, acrílicos, pintura a la tiza, pinceles y mucho más...</p>
+                        <p class="fs-3 carousel__texto">Te traemos una propuesta...</p>    
+                        <p class="fs-4 carousel__texto">Regalale a tu peque un producto Montessori, y todo lo necesario para pintarlo a gusto juntos</p>
+                        <p class="fs-4 carousel__texto">Encontralo todo en nuestra página: plazas Montessori, juegos didácticos, acrílicos, pintura a la tiza, pinceles y mucho más...</p>
                     </div>
                 </div>
                     <div class="carousel-item" data-bs-interval="4000">
                         <img src="./img/pincelescarousel.jpg" class="d-block w-100 carousel__img" alt="pintando con pincel">
                         <div class="carousel-caption d-none d-md-block">
                             <h2 class="fs-1 carousel__texto">Regalá una experiencia Montessori</h2>
-                            <p class="fs-4 carousel__texto">Te traemos una propuesta...      Regalale a tu peque un producto Montessori, y todo lo necesario para pintarlo a gusto juntos! Encontralo todo en nuestra página: plazas Montessori, juegos didácticos, acrílicos, pintura a la tiza, pinceles y mucho más...</p>
+                            <p class="fs-3 carousel__texto">Te traemos una propuesta... </p>
+                            <p class="fs-4 carousel__texto">Regalale a tu peque un producto Montessori, y todo lo necesario para pintarlo a gusto juntos</p>
+                            <p class="fs-4 carousel__texto">Encontralo todo en nuestra página: plazas Montessori, juegos didácticos, acrílicos, pintura a la tiza, pinceles y mucho más...</p>
                         </div>
                     </div>
                     <div class="carousel-item" data-bs-interval="4000">
                         <img src="./img/juguetescarousel.jpg" class="d-block w-100 carousel__img" alt="juguetes">
                         <div class="carousel-caption d-none d-md-block">
                             <h2 class="fs-1 carousel__texto">Regalá una experiencia Montessori</h2>
-                            <p class="fs-4 carousel__texto">Te traemos una propuesta...      Regalale a tu peque un producto Montessori, y todo lo necesario para pintarlo a gusto juntos! Encontralo todo en nuestra página: plazas Montessori, juegos didácticos, acrílicos, pintura a la tiza, pinceles y mucho más...</p>
+                            <p class="fs-3  carousel__texto">Te traemos una propuesta... </p>
+                            <p class="fs-4 carousel__texto">Regalale a tu peque un producto Montessori, y todo lo necesario para pintarlo a gusto juntos</p>
+                            <p class="fs-4 carousel__texto">Encontralo todo en nuestra página: plazas Montessori, juegos didácticos, acrílicos, pintura a la tiza, pinceles y mucho más...</p>
                         </div>
                     </div>
                     </div>
@@ -118,7 +130,7 @@
                                             <h3 class="card-title fs-5">Torre de aprendizaje</h3>
                                             <div class="producto__precio">
                                                 <p class="card-text text-decoration-line-through">$2000</p>
-                                                <p class="card-text fw-bolderprecio">$1800</p>
+                                                <p class="card-text fw-bolder precio">$1800</p>
                                             </div>
                                             <a href="" class="carrito">Agregar al carrito</a>
                                         </div>

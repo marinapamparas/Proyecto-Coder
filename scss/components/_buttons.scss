@@ -1,9 +1,10 @@
 .carrito {
-    border: $color-primario 2px solid;
+    border: map-get($map: $colores, $key: primario) 2px solid;
     border-radius: 20px;
   
-    background-color: $color-primario;
-    color: $color-secundario;
+    background-color: map-get($map: $colores, $key: primario);
+    color: map-get($map: $colores, $key: secundario);
+    font-family: $tipo-principal;
   
     padding: 8px 10px;
 }

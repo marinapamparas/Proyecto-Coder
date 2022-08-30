@@ -1,4 +1,7 @@
-$color-primario: rgb(165, 224, 197);
-$color-secundario: white;
-$color-terciario: rgba(210, 105, 30, 0.288);
 $tipo-principal: "Monserrat", sans-serif ;
+$colores: (
+    primario: rgb(165, 224, 197),
+    secundario: white,
+    terciario: rgba(210, 105, 30, 0.288),
+    cuatro: rgb(229, 253, 245)
+);

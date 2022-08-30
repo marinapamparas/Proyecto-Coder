@@ -2,7 +2,8 @@
     width: 100%;
     background: #000 url(../img/neneconjuguete.jpg) center / cover no-repeat local;
     text-align: center;
-    color: $color-secundario;
+    color: map-get($map: $colores, $key: secundario);
+    font-family: $tipo-principal;
     
 
     display: flex;

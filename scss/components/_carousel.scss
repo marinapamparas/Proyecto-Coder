@@ -1,5 +1,5 @@
 .carousel__texto{
     
-    background-color: $color-terciario;
+    background-color: map-get($map: $colores, $key: terciario);
     border-radius: 10px;
 }

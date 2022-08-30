@@ -1,12 +1,12 @@
 .footer{
     width: 100%;
     height: 15%;
-    background: linear-gradient(rgba(254, 192, 192, 0.726) 0% 4%, rgb(165, 224, 197));
+    background-color: map-get($map: $colores, $key: cuatro);
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    font-family: $tipo-principal ;
+    font-family: $tipo-principal;
     font-size: 1rem;
     padding: 2vw;
         &__titulo{
@@ -16,14 +16,7 @@
         &__seccion{
             text-align: center;
         }
-
-
-
 }
-
-
-
-
 
 .iconos{
     width: 40px;

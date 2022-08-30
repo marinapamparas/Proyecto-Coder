@@ -17,7 +17,7 @@ a {
 }
 
 nav {
-  background: linear-gradient(rgb(165, 224, 197) 0% 20%, rgba(254, 192, 192, 0.726));
+  background-color: rgb(229, 253, 245);
   font-family: "Monserrat", sans-serif;
   font-weight: 600;
   text-align: center;
@@ -31,7 +31,7 @@ main {
 .footer {
   width: 100%;
   height: 15%;
-  background: linear-gradient(rgba(254, 192, 192, 0.726) 0% 4%, rgb(165, 224, 197));
+  background-color: rgb(229, 253, 245);
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -40,12 +40,10 @@ main {
   font-size: 1rem;
   padding: 2vw;
 }
-
 .footer__titulo {
   font-size: 1rem;
   text-align: center;
 }
-
 .footer__seccion {
   text-align: center;
 }
@@ -54,16 +52,16 @@ main {
   width: 40px;
   margin: 5px;
 }
-
 .iconos:hover {
   transform: scale(1.5);
 }
 
-.formulario {
+.formulario, .hero {
   width: 100%;
   background: #000 url(../img/neneconjuguete.jpg) center/cover no-repeat local;
   text-align: center;
-  color: rgb(255, 255, 255);
+  color: white;
+  font-family: "Monserrat", sans-serif;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,51 +83,10 @@ fieldset {
   border-radius: 15px;
 }
 
-.titulomobile {
-  text-align: center;
-  background-color: rgb(165, 224, 197);
-  color: white;
-  margin: 2px;
-  padding: 5px;
-}
-
-.espaciado {
-  margin-top: 10px;
-  margin-bottom: 10px;
-}
-
-.overflow-scroll {
-  flex-wrap: nowrap;
-  overflow-x: scroll;
-}
-
-.promo__titulo {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: rgb(165, 224, 197);
-  width: 100%;
-  height: 8vh;
-  color: white;
-  font-size: 1rem;
-  border-radius: 5px;
-  padding: 10px;
-}
-
 @media (min-width: 1200px) {
   .overflow-scroll {
-    flex-wrap: wrap;
-    overflow: hidden;
+    flex-wrap: wrap !important;
   }
-}
-@media (min-width: 768px) {
-  .titulomobile {
-    display: none;
-  }
-}
-.carousel__titulo {
-  background-color: rgba(210, 105, 30, 0.288);
-  border-radius: 10px;
 }
 
 .carousel__texto {
@@ -142,6 +99,7 @@ fieldset {
   border-radius: 20px;
   background-color: rgb(165, 224, 197);
   color: white;
+  font-family: "Monserrat", sans-serif;
   padding: 8px 10px;
 }
 
@@ -150,23 +108,56 @@ fieldset {
   display: flex;
   justify-content: center;
   text-align: center;
+  font-family: "Monserrat", sans-serif;
   margin-top: 10px;
   margin-bottom: 10px;
 }
-
 .producto__img {
   width: 200px;
   height: 200px;
   object-fit: contain;
   margin-left: 20px;
 }
-
 .producto__precio {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  font-family: "Monserrat", sans-serif;
   width: 100%;
   padding: 15px;
+}
+
+.espaciado {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.overflow-scroll {
+  flex-wrap: nowrap;
+}
+
+.promo__titulo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Monserrat", sans-serif;
+  background-color: rgb(165, 224, 197);
+  width: 100%;
+  height: 8vh;
+  color: white;
+  font-size: 1rem;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.hero {
+  background: #000 url(../../img/nenepintando.jpg) center/cover no-repeat local;
+  flex-direction: column;
+  padding: 30px;
+}
+.hero__text {
+  background-color: rgba(210, 105, 30, 0.288);
 }
 
 .notes {
@@ -191,12 +182,10 @@ fieldset {
   margin: 5px;
   overflow: hidden;
 }
-
 .articuloexterno__title {
   font-size: 1rem;
   padding: 15px;
 }
-
 .articuloexterno__text {
   font-size: 0.8rem;
   padding: 7px;
@@ -211,11 +200,9 @@ fieldset {
   align-items: center;
   text-align: center;
 }
-
 .videoespacio__video {
   width: 200px;
 }
-
 .videoespacio__titulo {
   font-size: 1rem;
   margin: 15px;
