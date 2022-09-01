@@ -2,6 +2,7 @@
 .overflow-scroll{
     @include desktop{
     flex-wrap: wrap !important;
+    overflow: visible !important;
 }
 }
 

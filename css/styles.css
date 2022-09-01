@@ -84,6 +84,7 @@ fieldset {
 @media (min-width: 1200px) {
   .overflow-scroll {
     flex-wrap: wrap !important;
+    overflow: visible !important;
   }
 }
 
