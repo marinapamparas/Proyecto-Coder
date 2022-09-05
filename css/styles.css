@@ -89,8 +89,9 @@ fieldset {
 }
 
 .carousel__texto {
-  background-color: rgba(210, 105, 30, 0.288);
+  background-color: rgba(210, 105, 30, 0.259);
   border-radius: 10px;
+  padding: 30px 60px;
 }
 
 .carrito {
@@ -154,7 +155,7 @@ fieldset {
   padding: 30px;
 }
 .hero__text {
-  background-color: rgba(210, 105, 30, 0.288);
+  background-color: rgba(210, 105, 30, 0.259);
 }
 
 .notes {
