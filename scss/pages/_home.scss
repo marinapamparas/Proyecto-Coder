@@ -23,10 +23,11 @@
     @extend .formulario;
     background: #000 url(../img/carrousel3.jpeg) center / cover no-repeat local;
     flex-direction: column;
-    padding: 30px;
-
-    &__text{
-        background-color:  map-get($map: $colores, $key: terciario);
+    padding: 20px;
+    
+    @include tablet {
+        padding: 70px 100px;
+        height: 70vh;
     }
 }
 

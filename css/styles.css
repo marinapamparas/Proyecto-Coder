@@ -91,7 +91,7 @@ fieldset {
 .carousel__texto {
   background-color: rgba(210, 105, 30, 0.259);
   border-radius: 10px;
-  padding: 30px 60px;
+  padding: 10px 30px;
 }
 
 .carrito {
@@ -152,10 +152,13 @@ fieldset {
 .hero {
   background: #000 url(../img/carrousel3.jpeg) center/cover no-repeat local;
   flex-direction: column;
-  padding: 30px;
+  padding: 20px;
 }
-.hero__text {
-  background-color: rgba(210, 105, 30, 0.259);
+@media (min-width: 768px) {
+  .hero {
+    padding: 70px 100px;
+    height: 70vh;
+  }
 }
 
 .notes {
