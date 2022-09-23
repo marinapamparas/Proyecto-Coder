@@ -41,7 +41,7 @@
 
 
 .videoespacio{
-    height: 55vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -49,7 +49,7 @@
     text-align: center;
 
     &__video{
-        width: 200px;
+        width: 300px;
     }
 
     &__titulo{
@@ -64,5 +64,5 @@
     text-align: center;
     font-style: italic;
     font-size: large;
-    margin-bottom: 20px;
+    margin-bottom: 40px;
 }

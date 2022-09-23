@@ -43,6 +43,7 @@ main {
 .footer__titulo {
   font-size: 1rem;
   text-align: center;
+  color: rgb(129, 129, 129);
 }
 .footer__seccion {
   text-align: center;
@@ -101,6 +102,11 @@ fieldset {
   color: white;
   font-family: "Monserrat", sans-serif;
   padding: 8px 10px;
+}
+.carrito:hover {
+  color: rgb(165, 224, 197);
+  background-color: white;
+  border-color: rgb(165, 224, 197);
 }
 
 .producto {
@@ -194,7 +200,7 @@ fieldset {
 }
 
 .videoespacio {
-  height: 55vh;
+  height: 70vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -202,7 +208,7 @@ fieldset {
   text-align: center;
 }
 .videoespacio__video {
-  width: 200px;
+  width: 300px;
 }
 .videoespacio__titulo {
   font-size: 1rem;
@@ -213,7 +219,7 @@ fieldset {
   text-align: center;
   font-style: italic;
   font-size: large;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 /*# sourceMappingURL=styles.css.map */
