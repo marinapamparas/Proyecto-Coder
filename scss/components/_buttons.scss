@@ -10,7 +10,8 @@
 
     &:hover{
         color: map-get($map: $colores, $key: primario);
-        background-color: map-get($map: $colores, $key: secundario);
+        background-color: transparent;
         border-color:  map-get($map: $colores, $key: primario);
+        
     }
 }

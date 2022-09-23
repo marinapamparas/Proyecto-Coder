@@ -105,7 +105,7 @@ fieldset {
 }
 .carrito:hover {
   color: rgb(165, 224, 197);
-  background-color: white;
+  background-color: transparent;
   border-color: rgb(165, 224, 197);
 }
 
