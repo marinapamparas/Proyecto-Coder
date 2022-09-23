@@ -1,0 +1,20 @@
+{
+  "name": "proyectocoder",
+  "version": "1.0.0",
+  "description": "proyecto para curso desarrollo web",
+  "main": "index.js",
+  "scripts": {
+    "run-sass": "sass --watch scss/main.css css/styles.css"
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marinapamparas/Proyecto-Coder.git"
+  },
+  "author": "Marina Pamparas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marinapamparas/Proyecto-Coder/issues"
+  },
+  "homepage": "https://github.com/marinapamparas/Proyecto-Coder#readme"
+}
